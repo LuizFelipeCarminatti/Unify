@@ -1,0 +1,202 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: "Raleway", sans-serif; 
+}
+
+body{
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    grid-template-rows: 100px auto;
+    grid-template-areas: 
+        'logo botao'
+        'navegacao navegacao';
+}
+
+div.logo{
+    grid-area: logo;
+}
+
+nav.navegacao{
+    grid-area: navegacao;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+}
+
+nav.navegacao.efeitoMenuMobile{
+    display: block;
+}
+
+div.div-principal.linkExpand{
+    display: block;
+}
+
+nav.navegacao ul{
+    width: 100%;
+}
+
+nav.navegacao ul li{
+    list-style: none;
+    padding: 10px 40px;
+}
+
+nav.navegacao ul li a{
+    text-decoration: none;
+    color: #272727;
+}
+.btns-login{
+    margin-left: 20px;
+}
+.login{
+    border: none;
+    margin-right: 5px;
+    font-weight: bolder;
+    background-color: transparent;
+    width: 100px;
+    height: 50px;
+    color: #2D374B;
+    border-radius: 5px;
+}
+.login:hover{
+    background-color: #EAEBED;
+}
+
+.signIn{
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2D374B;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.signIn:hover{
+    background-color: #4D5566;
+}
+
+.link-click{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.link-click:hover{
+    background-color: #F2F3F6;
+}
+
+div.div-principal{
+    width: 100%;
+    border: 1px solid #e7e4e4;
+    margin: 10px 0;
+    display: none;
+    padding: 10px;
+}
+
+div.div-principal ul li{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.div-principal ul li:hover{
+    background-color: #F2F3F6;
+}
+
+div.div-principal ul li:hover .seta{
+    display: block;
+}
+
+div.div-principal h4{
+    padding: 20px;
+}
+
+div.corte-div div{
+    display: flex;
+}
+
+.seta{
+    display: none;
+    color: rgb(1, 196, 24);
+}
+
+.btn-hamburger{
+    grid-area: botao;
+}
+
+.btn-hamburger button{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e7e4e4;background-color: transparent;
+    color: #585656;
+}
+
+div.logo div.img{
+    width: 200px;
+    height: 100%;
+    padding: 30px;
+}
+ 
+div.logo div.img img{
+    width: 70%;
+    margin: 0 10px;
+}
+
+@media (min-width: 769px) {
+    header{
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: 100px;
+        grid-template-areas: 
+            'logo navegacao';
+    }
+
+    .btn-hamburger{
+        display: none;
+    }
+
+    nav.navegacao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    nav.navegacao ul{
+        display: flex;
+    }
+
+    nav.navegacao ul li .div-principal{
+        position: absolute;
+        width: 20%;
+    }
+
+    nav.navegacao ul li .div-principal ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav.navegacao ul li:hover .div-principal{
+        display: block;
+    }
+
+    .btns-login{
+        display: flex;
+        margin-right: 20px;
+    }
+}
