@@ -1,11 +1,11 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Raleway", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 body {
@@ -279,7 +279,6 @@ div.logo div.img img {
     h1.cor{
         color: #0ABF53;
     }
-
     .request{
         width: 150PX;
         height: 50px;
@@ -443,5 +442,146 @@ div.logo div.img img {
     }
     .divImg img{
         border-radius: 100px;
+    }
+
+    .quartaSection{
+        display: grid;
+        grid-template-areas: 
+            'textos numeros'
+            'marcas marcas';
+        color: #2D374B;
+    }
+    .quartaSection h1{
+        font-size: 40px;
+    }
+
+    .quartaSection p {
+        margin: 20px 0;
+    }
+
+    .quartaSection .segundoTexto{
+        font-style: italic;
+        font-size: 20px;
+    }
+
+    .apresentacao{
+        display: flex;
+        height: 60px;
+        width: 400px;
+    }
+    .apresentacao img{
+        border-radius: 100px;
+    }
+    .textos{
+        margin-right: 100px;
+        grid-area: textos;
+    }
+    .marcas{
+        grid-area: marcas;
+        display: flex;
+        justify-content: space-between;
+        margin: 100px;
+    }
+    .marcas img{
+        width: 100px;
+    }
+    .quartaSection .numeros{
+        grid-area: numeros;
+        width: 500px;
+        height: 300px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .quartaSection .numeros .primeiraDiv{
+        border-bottom: 2px solid #E6F8ED;
+        border-right: 2px solid #E6F8ED;
+        padding: 20px;
+    }
+    .quartaSection .numeros .quartaDiv{
+        padding: 20px;
+        border-top: 2px solid #E6F8ED;
+        border-left: 2px solid #E6F8ED;
+        position: relative;
+        left: -3px;
+        top: -2px;
+    }
+
+    .quartaSection .numeros .segundaDiv{
+        padding: 20px;
+    }
+    .quartaSection .numeros .terceiraDiv{
+        padding: 20px;
+    }
+
+    .quartaSection .numeros .segundaDiv h1 span{
+        color: #0ABF53;
+    }
+    .quartaSection .numeros .terceiraDiv h1 span{
+        color: #0ABF53;
+    }
+
+    .quintaSection{
+        color: #2D374B;
+    }
+
+    .quintaSection div{
+        text-align: center;
+    }
+    .quintaSection div p{
+        margin: 30px 0 60px 0;
+    }
+
+    .quintaSection div h1{
+        font-size: 35px;
+    }
+
+    .quintaSection ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    .quintaSection ul li{
+        position: relative;
+        list-style: none;
+        margin-right: 20px;
+        width: 400px;
+        border-radius: 20px;
+    }
+
+    .quintaSection ul li h2{
+        margin: 20px 0;
+    }
+    
+    .quintaSection ul li img{
+        border-radius: 20px;
+        width: 100%;
+    }
+
+    .quintaSection ul li p{
+        margin: 20px 0;
+    }
+
+    .quintaSection ul li button{
+        border: none;
+        background-color: transparent;
+        font-size: 16px;
+        color: #0ABF53;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Sponsored{
+        background-color: #2D374B;
+        color: #fff;
+        width: 100px;
+        height: 30px;
+        padding: 5px 10px;
+        position: absolute;
+        right: 0;
+        top: -20px;
+        border-radius: 0 20px;
+        font-size: 14px;
     }
 }
