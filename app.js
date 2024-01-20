@@ -31,3 +31,9 @@ linkClick.forEach(link => {
 
     }
 })
+
+document.querySelectorAll('.efeitoDeImagem').forEach(li => {
+    li.onmouseout = function () {
+        li.children[0].firstElementChild.classList.add('efeito')
+    }
+})
