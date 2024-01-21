@@ -23,9 +23,9 @@ btn.onclick = function () {
 linkClick.forEach(link => {
     link.onclick = function () {
         if (window.innerWidth <= 769) {   
-            divsPrincipal.forEach(divPrincipal => {
+            /* divsPrincipal.forEach(divPrincipal => {
                 divPrincipal.classList.remove('linkExpand')
-            })
+            }) */
             link.nextElementSibling.classList.toggle('linkExpand')
         }
 
@@ -37,3 +37,14 @@ document.querySelectorAll('.efeitoDeImagem').forEach(li => {
         li.children[0].firstElementChild.classList.add('efeito')
     }
 })
+
+document.querySelectorAll('.idioma').forEach(lang => {
+    lang.onclick = function () {
+        lang.parentNode.parentNode.textContent = lang.textContent
+    }
+})
+
+let idiomas = document.querySelector('.idiomas')
+document.querySelector('.lang').onclick = function () {
+    idiomas.classList.toggle('displayBtn')
+}

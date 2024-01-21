@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleMobile.css">
     <link rel="stylesheet" href="styleDesktop.css">
     <title>Menu</title>
 </head>
@@ -12,8 +12,7 @@
     <main>
         <section class="primeiraSection">
             <div class="commentsMSG">
-                <h1 class="verde">Start your</h1>
-                <h1 class="verde">journey with</h1>
+                <h1 class="verde primeiroTitutlo">Start your journey with</h1>
                 <h1 class="verde cor">Unify</h1>
                 
                 <p class="verde">Feature-rich components and designed demo<br> pages help you create the best possible<br> products.</p>
@@ -44,7 +43,7 @@
                         </div>
                     </div>
                 </div>
-                <img src="img/img1.jpg" alt="">
+                <img src="img/img1.jpg" alt="" class="imgPrincipal">
             </div>
         </section>
 
@@ -61,7 +60,7 @@
                 <p  class="verde">Use our tools to explore your ideas and make your vision<br> come true. Then share your work easily.</p>
 
                 <ul>
-                    <li class="verde"><span class="material-symbols-outlined">done</span><strong>Less routine - more creativity</strong></li>
+                    <li class="verde"><span class="material-symbols-outlined">done</span><strong>Less routine</strong> - more creativity</li>
                     <li class="verde"><span class="material-symbols-outlined">done</span>Hunreds of thousands saved</li>
                     <li class="verde"><span class="material-symbols-outlined">done</span>Scale budgets <strong>efficiently</strong></li>
                 </ul>
@@ -144,8 +143,8 @@
                 <img src="img/mailchimp-dark.svg" alt="">
                 <img src="img/sass-dark.svg" alt="">
                 <img src="img/forbes-dark.svg" alt="">
-                <img src="img/gitlab-dark.svg" alt="">
-                <img src="img/hubspot-dark.svg" alt="">
+                <img src="img/gitlab-dark.svg" alt="" class="none">
+                <img src="img/hubspot-dark.svg" alt="" class="none">
             </div>
         </section>
 
@@ -299,14 +298,14 @@
                             <div><span class="material-symbols-outlined">description</span></div>
                             <div>
                                 <h4>Documentation</h4>
-                                <p>Development guides for building projects with Unify</p>
+                                <p>Development guides for building<br> projects with Unify</p>
                             </div>
                         </div>
                         <div class="description">
                             <div><span class="material-symbols-outlined">layers</span></div>
                             <div>
                                 <h4>Snippets</h4>
-                                <p>Move quickly with copy-to-clipboard feature</p>
+                                <p>Move quickly with copy-to-<br>clipboard feature</p>
                             </div>
                         </div>
                     </div>
@@ -390,11 +389,12 @@
                     <li>Privacy and Policy</li>
                     <li>Terms</li>
                     <li>Status</li>
-                    <li>
-                        <ul>
-                            <li>English</li>
-                            <li>Deutsch</li>
-                            <li>Español</li>
+                    <li class="lang">
+                        English
+                        <ul class="idiomas">
+                            <li class="idioma"><div><img src="img/United-States.png" alt=""> English</div> <img src="img/right-arrow.png" class="imgSeta"></li>
+                            <li class="idioma"><div><img src="img/alemanha.png" alt="">Deutsch</div><img src="img/right-arrow.png" class="imgSeta"></li>
+                            <li class="idioma"><div><img src="img/spain.png" alt=""> Español</div> <img src="img/right-arrow.png" class="imgSeta"></li>
                         </ul>
                     </li>
                 </ul>

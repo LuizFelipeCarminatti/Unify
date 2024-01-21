@@ -1,4 +1,14 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @media (min-width: 769px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+        color: #2D374B;
+    }
 
     header {
         grid-template-columns: 150px 1fr;
@@ -86,6 +96,10 @@
 
     h1.cor{
         color: #0ABF53;
+    }
+
+    .primeiroTitutlo{
+        width: 350px;
     }
     .request{
         width: 150PX;
@@ -474,6 +488,7 @@
     .segundoMenu ul li{
         padding: 5px;
         list-style: none;
+        color: #C0C3C9;
     }
     .corEspecial{
         color: #0ABF53;
@@ -491,5 +506,71 @@
     .ultimoFooter ul li{
         list-style: none;
         padding: 0 10px;
+        color: #C0C3C9;
+    }
+
+    .ultimoFooter p{
+        color: #C0C3C9;
+    }
+    .div-principal .description{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .div-principal .description div span{
+        margin-right: 30px;
+    }
+
+    .lang{
+        position: relative;
+        cursor: pointer;
+    }
+
+    .lang ul{
+        position: absolute;
+        top: -150px;
+        padding: 10px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #fff;
+        display: none;
+    }
+    .lang ul li{
+        color: #2D374B;
+        border-radius: 10px;
+        width: 150px;
+        height: 30px;
+        margin: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .lang ul li img.imgSeta{
+        display: none;
+        width: 10px;
+    }
+
+    .lang ul li img{
+        width: 20px;
+    }
+
+    .lang ul li:hover img{
+        display: block;
+    }
+
+    .lang ul li:hover{
+        background-color: #F2F3F6;
+    }
+
+    .lang .displayBtn{
+        display: block;
+    }
+
+    .idioma div{
+        display: flex;
     }
 }
