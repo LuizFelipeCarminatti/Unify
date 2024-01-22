@@ -48,3 +48,12 @@ let idiomas = document.querySelector('.idiomas')
 document.querySelector('.lang').onclick = function () {
     idiomas.classList.toggle('displayBtn')
 }
+
+let btn = document.getElementById('btnScroll')
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+        btn.style.display = 'block'
+    }else{
+        btn.style.display = 'none'
+    }
+})
